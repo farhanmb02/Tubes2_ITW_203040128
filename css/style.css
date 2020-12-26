@@ -1,3 +1,134 @@
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+html {
+  scroll-behavior: smooth;
+}
+.navbar-brand {
+  font-family: "Abril Fatface", cursive;
+  font-size: 38px;
+  font-weight: 400;
+}
+.navbar {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.795);
+}
+
+.navbar-nav a {
+  margin: 5px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+}
+.jumbotron {
+  background: url(../Assets/img/pexels-gustavo-fring-3984885.jpg);
+  background-size: cover;
+  height: 705px;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  margin-top: 30px;
+}
+.jumbotron::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.877),
+    rgba(0, 0, 0, 0)
+  );
+  bottom: 0;
+}
+.jumbotron .container {
+  top: 200px;
+  position: absolute;
+  left: 20px;
+}
+.jumbotron .display-4 {
+  color: white;
+  font-family: "Abril Fatface", cursive;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.nav-item:hover {
+  color: white !important;
+  background-color: rgba(29, 27, 27, 0.945);
+  border-radius: 7px;
+  transition: all ease 0.5s;
+}
+
+.jumbotron p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  width: 50%;
+  text-shadow: 1px 1px 2px rgba(34, 32, 32, 0.5);
+}
+.carousel {
+  margin-right: 20px;
+  width: 30%;
+}
+.container-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-gallery {
+  font-family: "Merriweather", serif;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.container-slider img {
+  border-radius: 20px;
+}
+.container-gallery {
+  padding-top: 100px;
+  margin-bottom: 20px;
+}
+.about {
+  font-family: "Merriweather", serif;
+  height: 290px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.card h5,
+p {
+  padding: 5px !important;
+}
+@media (max-width: 560px) {
+  .jumbotron .display-4 {
+    color: white;
+    font-family: "Abril Fatface", cursive;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 50px;
+  }
+  .jumbotron .container {
+    top: 130px;
+    position: absolute;
+    left: 20px;
+  }
+  .jumbotron p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+    width: 70%;
+    text-shadow: 1px 1px 2px rgba(34, 32, 32, 0.596);
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+  .jumbotron {
+    background: url(../Assets/img/pexels-gustavo-fring-3984885.jpg);
+    background-size: auto;
+
+    height: 560px;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+.portfolio img {
+  width: 100%;
+  height: 100%;
 }
